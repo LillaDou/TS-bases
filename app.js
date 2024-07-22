@@ -1,8 +1,37 @@
 "use strict";
-//Creamos una función anónima autoinvocada para poder crear archivos que 
-//no están vinculados entre sí. De esta manera evitamos notificaciones de error en TS
 (() => {
-    const a = 10; // 10 - el valor de a siempre será 10 - no se puede cambiar al ser un const
-    let b = 10; // number - se puede cambiar, b es un tipo número
-    console.log(a);
+    // Tipos
+    const batman = 'Bruce';
+    const superman = 'Clark';
+    const existe = false;
+    // Tuplas
+    const parejaHeroes = [batman, superman];
+    const villano = ['Lex Lutor', 5, true];
+    // Arreglos
+    const aliados = ['Mujer Maravilla', 'Acuaman', 'San', 'Flash'];
+    //Enumeraciones
+    //? enum { acuaman = 0 }
+    let fuerzas;
+    (function (fuerzas) {
+        fuerzas[fuerzas["acuaman"] = 0] = "acuaman";
+        fuerzas[fuerzas["batman"] = 1] = "batman";
+        fuerzas[fuerzas["flash"] = 5] = "flash";
+        fuerzas[fuerzas["superman"] = 100] = "superman";
+    })(fuerzas || (fuerzas = {}));
+    const fuerzaFlash = fuerzas.flash;
+    const fuerzaSuperman = fuerzas.superman;
+    const fuerzaBatman = fuerzas.batman;
+    const fuerzaAcuaman = fuerzas.acuaman;
+    // Retorno de funciones
+    function activar_batiseñal() {
+        return 'activada';
+    }
+    function pedir_ayuda() {
+        console.log('Auxilio!!!');
+    }
+    // Aserciones de Tipo
+    //? Casting
+    const poder = '100';
+    const largoDelPoder = poder.length;
+    console.log(largoDelPoder);
 })();
