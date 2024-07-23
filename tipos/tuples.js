@@ -13,3 +13,4 @@
     hero[2] = false; //boolean
     console.log(hero);
 })();
+//# sourceMappingURL=tuples.js.map

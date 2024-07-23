@@ -11,3 +11,4 @@
     //Esto significa: si el 11º caracter de batman existe, entonces haz el toUpperCase.
     //Si no, no hagas nada
 })();
+//# sourceMappingURL=strings.js.map

@@ -39,3 +39,4 @@ const apocalipsis = {
 let mystique;
 mystique = charles;
 mystique = apocalipsis;
+//# sourceMappingURL=app-objetos.js.map

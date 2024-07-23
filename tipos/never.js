@@ -12,3 +12,4 @@
     error('Auxilio'); //Tras esto, el código no se sigue ejecutando. 
     console.log('Hola Mundo'); //Ya no se ejecuta por la función de error
 })();
+//# sourceMappingURL=never.js.map

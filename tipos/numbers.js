@@ -13,3 +13,4 @@
     //Consola: NaN (Not a Number) Esto en JS es un número
     console.log({ avengers });
 })();
+//# sourceMappingURL=numbers.js.map

@@ -12,3 +12,4 @@
     };
     console.log(typeof myCustomVariable); //En consola, es de tipo Object
 })();
+//# sourceMappingURL=union-types.js.map
