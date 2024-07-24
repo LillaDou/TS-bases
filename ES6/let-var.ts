@@ -7,7 +7,7 @@
 
     const nombre = 'Fernando';
 
-    const getName = () => {
+    const getName = (): void => {
         console.log('Viejo getName');
     }
 
