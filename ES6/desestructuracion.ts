@@ -31,6 +31,15 @@
         console.log( ironman, resto );
     }
 
-    printAvenger( avengers );
+    // printAvenger( avengers );
+
+    //*Desestructuración de arreglos
+    //FUnciona mejor si indicamos bien el tipo de las variables y elementos 
+    
+    const avengersArr: string[] = ['Cap. America', 'Ironman', 'Hulk' ];
+
+    // Da igual el nombre que le pongamos a la desestructuración
+    const [ , ironman, ] = avengersArr;
+    // console.log({ironman})
 
 })()
