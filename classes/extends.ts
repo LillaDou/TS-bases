@@ -8,7 +8,7 @@
             public name: string, 
             public realName: string,
         ) {
-            console.log('Constructor Avenger llamado!');
+            // console.log('Constructor Avenger llamado!');
         }
 
         protected getFullName() {
@@ -23,7 +23,7 @@
             public isMutant: boolean,
         ){
             super( name, realName );//Super se debe llamar ASAP
-            console.log('Constructor Xmen llamado!');
+            // console.log('Constructor Xmen llamado!');
     
         }
 
@@ -49,13 +49,13 @@
 
     const wolverine = new Xmen('Wolverine', 'Logan', true);
 
-    console.log(wolverine.fullName);
+    // console.log(wolverine.fullName);
     //Los get no se ejecutan como un método(con () ). Solo se mandan a llamar
 
     // wolverine.getFullnameDesdeXmen();
 
     wolverine.fullName = 'Fernando'; //Esto es lo que sucede con el SET
-    console.log(wolverine.fullName);
+    // console.log(wolverine.fullName);
 
     
 })()
