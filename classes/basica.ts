@@ -32,10 +32,10 @@
 
 
     const antman: Avenger = new Avenger('Antman', 'Capitan', 'Scott Lang');
-    console.log(antman);
+    //* console.log(antman);
     // console.log(Avenger.avgAge)//Se puede acceder a los static de forma global, mencionando a la 
     //clase (Avenger) y a la propiedad (avgAge)
 
-    console.log( antman.bio() );
+    //* console.log( antman.bio() );
 
 })()
