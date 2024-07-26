@@ -1,9 +1,10 @@
 (() => {
 
-    //Un constructor privado sirve para controlar la manera en la cual nuestras instancias 
-    //son ejecutadas. Por ejemplo, con singletons (este ejemplo)
+    //!Un constructor privado sirve para controlar la manera en la cual nuestras instancias 
+    //!son ejecutadas. Por ejemplo, con singletons (este ejemplo)
 
-    //Podemos acceder al constructor SOLO desde dentro de la clase.
+    //!Podemos acceder al constructor SOLO desde dentro de la clase, por lo que 
+    //!las instancias de la clase se crearán desde dentro
 
 
     class Apocalipsis {
