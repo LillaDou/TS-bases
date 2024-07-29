@@ -5,6 +5,8 @@
 
 //Las interfaces no tienen contrapartes de JS.
 
+//al igual que los tipos, podemos añadir métodos en interfaces. 
+
 (() => {
 
     interface Client {
@@ -18,6 +20,8 @@
         // }
         //El address puede ser opcional, pero si se define el address, es obligatorio poner el resto
         //de elementos dentro
+        getFullAddress( id: string ): void,//Es lo mismo que getFullAddress( id: string )=> void,
+        //La interface no implementa el método, solo indica cómo se debe ver. La clase se encarga de implementar el método.
     }
 
     interface Address {
@@ -33,6 +37,9 @@
             id: 125,
             zip: 'KY2 SUD',
             city: 'Ottawa',
+        },
+        getFullAddress( id: string ) {
+            return this.address.city;
         }
     }
 
@@ -43,6 +50,9 @@
             city: 'Toronto',
             id: 120,
             zip: 'KS2 USA',
+        },
+        getFullAddress( id: string ) {
+            return this.address.city;
         }
     }
 
