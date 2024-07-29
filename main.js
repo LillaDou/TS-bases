@@ -1,61 +1,12 @@
 "use strict";
-(() => {
-    let flash = {
-        name: 'Barry Allen',
-        age: 24,
-        powers: [1, 2],
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return (text.length > 3) ? true : false;
     };
-    let superman = {
-        name: 'Clark Kent',
-        age: 60,
-        powers: [1],
-        getName() {
-            return this.name;
-        }
+    Validations.validateDate = (myDate) => {
+        return (isNaN(myDate.valueOf())) ? false : true;
     };
-})();
-(() => {
-    class Mutant {
-        constructor() {
-            this.age = 0;
-            this.name = 'Wolverine';
-            this.realName = 'Logan';
-        }
-        mutantPower(id) {
-            return this.name + ' ' + this.realName;
-        }
-    }
-})();
-(() => {
-    const client = {
-        name: 'Lilla',
-        age: 26,
-        address: {
-            id: 125,
-            zip: 'KY2 SUD',
-            city: 'Ottawa',
-        },
-        getFullAddress(id) {
-            return this.address.city;
-        }
-    };
-    const client2 = {
-        name: 'Melissa',
-        age: 30,
-        address: {
-            city: 'Toronto',
-            id: 120,
-            zip: 'KS2 USA',
-        },
-        getFullAddress(id) {
-            return this.address.city;
-        }
-    };
-})();
-(() => {
-    let addNumbersFunction;
-    addNumbersFunction = (a, b) => {
-        return 10;
-    };
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText('Fernando'));
 //# sourceMappingURL=main.js.map
